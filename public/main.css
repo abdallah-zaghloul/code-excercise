@@ -1,0 +1,17 @@
+/* CSS for responsive layout */
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-row input {
+    width: 30%;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    .form-row input {
+        width: 100%;
+    }
+}

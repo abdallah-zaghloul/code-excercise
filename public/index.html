@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Example</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<h1>Form Example</h1>
+<form method="POST" action="/submit" enctype="multipart/form-data">
+    <!-- CSRF token -->
+    <input type="hidden" name="_csrf" value="YOUR_CSRF_TOKEN">
+
+    <div class="form-row">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first_name" required>
+    </div>
+
+    <div class="form-row">
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last_name" required>
+    </div>
+
+    <div class="form-row">
+        <label for="image-upload">User Image:</label>
+        <input type="file" id="image-upload" name="user_image" accept="image/*" required>
+    </div>
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
